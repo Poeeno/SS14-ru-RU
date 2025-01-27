@@ -191,7 +191,7 @@
   suffix: COMMUNITY,TOY,GIFT
   components:
   - type: Sprite
-    sprite: Imperial/Other/TFG/Toughguys/bertender-full.rsi
+    sprite: Imperial/Other/TFG/Toughguys/bartender-full.rsi
     state: icon
   - type: Item
     size: Normal
