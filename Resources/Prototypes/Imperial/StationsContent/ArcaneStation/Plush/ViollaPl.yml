@@ -9,4 +9,4 @@
     size: Small
   - type: Sprite
     sprite: Imperial/StationsContent/ArcaneStation/Plush
-    state: ViollaPl
+    state: icon

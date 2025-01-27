@@ -9,4 +9,4 @@
     size: Small
   - type: Sprite
     sprite: Imperial/StationsContent/ArcaneStation/PlushTwo
-    state: OliaPl
+    state: icon
