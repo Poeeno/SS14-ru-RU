@@ -42,6 +42,114 @@
   components:
   - type: Sprite
     sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Security/sec_suit.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumCitizenWork
+  parent: ClothingUniformBase
+  name: citizen jumpsuit
+  description: Federation citizen's jumpsuit.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Default.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Default.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumCitizenLoyal
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for a loyal group of Federation citizens. Wearing it, you feel your heart being filled with the warmth of patriotism.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Loyal.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Loyal.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumCitizenWork
+  parent: ClothingUniformBase
+  name: work jumpsuit
+  description: A comfortable suit designed for heavy and labour-intensive work. It has a Federation patch.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Worker.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Citizen/Worker.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumDepartamentAdmin
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for managers. Poverty will envy you.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/administrator.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/administrator.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumDepartamentMigration
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for migration officers. Poverty will envy you.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/migration.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/migration.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumDepartamentWorker
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for employees. Poverty will envy you.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/worker.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/worker.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumDepartamentWorkerAlt
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for employees. Poverty will envy you.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/workeralt.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/workeralt.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumDepartamentWorkerAlter
+  parent: ClothingUniformBase
+  name: formal suit
+  description: A comfortable suit designed for employees. Poverty will envy you.
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/workeralter.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Departaments/workeralter.rsi
+
+- type: entity
+  id: ClothingUniformJumpsuitElysiumSecurityPatrol
+  parent: ClothingUniformBase
+  name: tactical suit
+  description: A comfortable suit designed for Federation patrolmen. Beat the intruders!
+  suffix: Elysium_Prime
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Security/patrol.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ElysiumPrime/Clothing/Jumpsuits/Security/patrol.rsi
 #jumpsuits END
 
 #vest
