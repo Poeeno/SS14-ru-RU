@@ -8,5 +8,5 @@
   - type: Item
     size: Small
   - type: Sprite
-    sprite: Imperial/StationsContent/ArcaneStation/PlushTwo
+    sprite: Imperial/StationsContent/OldStation/PlushTwo
     state: icon
