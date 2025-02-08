@@ -526,3 +526,18 @@
     maxItemSize: Huge
     grid:
     - 0,0,5,3
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackRegularForce
+  name: nanocapacity of Regular Forces
+  suffix: Felix
+  description: An advanced capacity designed with nanofabric to carry a lot of stuff without slowing down the wearer.
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/back/capacity.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ExplosionResistance
+    damageCoefficient: 0
