@@ -114,6 +114,17 @@
   - type: Clothing
     sprite: Imperial/Felix/Clothing/neck/shoulderpad/yellow.rsi
 
+# Плащи, мантии и прочее.
+- type: entity
+  parent: ClothingNeckBase
+  id: GuardCloak
+  name: guard cloak
+  suffix: Felix
+  description: Radiates excellence.
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/neck/guard_cloak.rsi
+
 # Униформа
 - type: entity
   parent: ClothingUniformBase
@@ -496,3 +507,22 @@
   - type: Clothing
     sprite: Imperial/Felix/Clothing/hardsuits/head/assassin.rsi
   - type: Appearance
+
+# Рюкзаки, РПС, прочие ёмкости.
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: RegularForceMedicWebbing
+  suffix: Felix
+  name: Regular Force medic RPS
+  description: A very comfortable PLCE that doesn't restrict movement.
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/belt/medic_rps.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/belt/medic_rps.rsi
+  - type: Item
+    size: Large
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,3
