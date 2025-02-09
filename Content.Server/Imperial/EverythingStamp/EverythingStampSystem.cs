@@ -22,7 +22,7 @@ namespace Content.Server.Paper
         }
         private void OnInit(EntityUid uid, EverythingStampComponent everythingStampComp, ComponentInit args)
         {
-            everythingStampComp.CollectedStamps.Add(new StampDisplayInfo{ StampedName = Loc.GetString("stamp-component-stamped-name-syndicate"), StampedColor = Color.FromHex("#850000") });
+            everythingStampComp.CollectedStamps.Add(new StampDisplayInfo { StampedName = Loc.GetString("stamp-component-stamped-name-syndicate"), StampedColor = Color.FromHex("#850000") });
         }
         private void OnInHandActivation(Entity<EverythingStampComponent> entity, ref UseInHandEvent args)
         {
