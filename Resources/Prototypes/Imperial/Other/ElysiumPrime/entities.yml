@@ -253,6 +253,9 @@
   description: Identification Card.
   suffix: ElysiumPrime
   components:
+    - type: IdCard
+      jobIcon: FederationJobIcon
+      jobTitle: job-name-federation
     - type: Access
       tags:
       - Federation
@@ -265,7 +268,7 @@
         - idcard
       sprite: Imperial/Other/ElysiumPrime/Misc/card.rsi
     - type: PresetIdCard
-      job: #none
+      job: null
 
 #Federation PDA
 - type: entity

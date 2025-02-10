@@ -1,5 +1,93 @@
 # Звёздный Корпус
 
+# Гарнитура
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetLinkDiodeRegularForce
+  suffix: Регулярка, Felix
+  name: link diode
+  description: A portable, easily removable implant for communicating with others in your unit.
+  components:
+  - type: EncryptionKeyHolder
+    keySlots: 30
+  - type: ContainerFill
+    containers:
+      key_slots:
+        - EncryptionKeyRegularForce
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetLinkDiodeGuard
+  suffix: Гвардия, Felix
+  name: link diode
+  description: A portable, easily removable implant for communicating with others in your unit.
+  components:
+  - type: EncryptionKeyHolder
+    keySlots: 30
+  - type: ContainerFill
+    containers:
+      key_slots:
+        - EncryptionKeyGuard
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetLinkDiodeMedCorps
+  suffix: Мед.Корпус, Felix
+  name: link diode
+  description: A portable, easily removable implant for communicating with others in your unit.
+  components:
+  - type: EncryptionKeyHolder
+    keySlots: 30
+  - type: ContainerFill
+    containers:
+      key_slots:
+        - EncryptionKeyMedCorps
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/ears/headset.rsi
+
+# Очки, визоры и прочее.
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHudRegularForce
+  suffix: Felix
+  name: regular force hud
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/eyes/regular.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/eyes/regular.rsi
+- type: entity
+  parent: [ClothingEyesBase, ShowMedicalIcons]
+  id: ClothingEyesHudMedCorps
+  name: medcorps hud
+  suffix: Felix
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/eyes/medcorps.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/eyes/medcorps.rsi
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
+  id: ClothingEyesHudGuard
+  name: guard hud
+  suffix: Felix
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/eyes/guard.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/eyes/guard.rsi
+
 # Тактическая Кама
 - type: entity
   parent: ClothingBeltSuspendersRed
@@ -507,6 +595,24 @@
   - type: Clothing
     sprite: Imperial/Felix/Clothing/hardsuits/head/assassin.rsi
   - type: Appearance
+
+# Маски, противогазы и прочее
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingNanoMask
+  name: nanomask
+  suffix: Felix
+  description: A breathing mask created with nanofabric.
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Clothing/masks/nanomask.rsi
+  - type: Clothing
+    sprite: Imperial/Felix/Clothing/masks/nanomask.rsi
+  - type: IngestionBlocker
+  - type: Item
+    size: Normal
+  - type: IdentityBlocker
+    coverage: MOUTH
 
 # Рюкзаки, РПС, прочие ёмкости.
 - type: entity
