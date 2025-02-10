@@ -272,3 +272,85 @@
     sprite: Imperial/Felix/Objects/walls/dark_shuttle.rsi
   - type: Icon
     sprite: Imperial/Felix/Objects/walls/dark_shuttle.rsi
+
+# Шкафы, ящики
+
+- type: entity
+  id: CivilianFederationLocker
+  parent: LockerBaseSecure
+  name: civilian locker
+  suffix: Felix
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/closets/civilian.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: base_open
+    stateDoorClosed: base_door
+- type: entity
+  id: PatrolLocker
+  parent: LockerBaseSecure
+  name: patrol locker
+  suffix: Felix, ElysiumPrime
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/closets/patrol.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: base_open
+    stateDoorClosed: base_door
+  - type: AccessReader
+    access: [["Federation"]]
+- type: entity
+  id: StarCorpsLocker
+  parent: LockerBaseSecure
+  name: starcorps locker
+  suffix: Felix
+  description: null
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/closets/starcorps.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: base_open
+    stateDoorClosed: base_door
+  - type: AccessReader
+    access: [["StarCorps"]]
+
+# Баннеры, знамёна, плакаты
+
+- type: entity
+  id: BannerElysiumCivilian
+  parent: BannerBase
+  name: holographic display
+  suffix: Felix, ElysiumPrime
+  description: Hail the Federation!
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/banner.rsi
+    state: civilian
+- type: entity
+  id: BannerElysiumSecurity
+  parent: BannerBase
+  name: holographic display
+  suffix: Felix, ElysiumPrime
+  description: Hail the Federation!
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/banner.rsi
+    state: security
+- type: entity
+  parent: PosterBase
+  id: ElysiumPosterHolo
+  name: holographic display
+  suffix: Felix, ElysiumPrime
+  description: Hail the Federation!
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/poster.rsi
+    state: elysium

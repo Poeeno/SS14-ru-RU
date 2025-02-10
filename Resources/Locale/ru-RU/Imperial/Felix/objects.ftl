@@ -37,3 +37,14 @@ ent-WallShuttleStarCorps = стена Звёздного Корпуса
     .desc = Удерживает воздух внутри.
 ent-DarkWallShuttleStarCorps = стена Звёздного Корпуса
     .desc = Удерживает воздух внутри.
+
+ent-CivilianFederationLocker = гражданский шкафчик
+ent-PatrolLocker = оружейный шкаф
+ent-StarCorpsLocker = шкафчик Звёздного Корпуса
+
+ent-BannerElysiumCivilian = голографический дисплей
+    .desc = Восславь Федерацию!
+ent-BannerElysiumSecurity = голографический дисплей
+    .desc = Восславь Федерацию!
+ent-ElysiumPosterHolo = голографический дисплей
+    .desc = Восславь Федерацию!
