@@ -51,3 +51,15 @@ ent-ElysiumPosterHolo = голографический дисплей
 
 ent-StarCorpsTradingTerminal = торговый терминал
     .desc = Несколько голографических дисплеев, с которыми вы можете взаимодействовать.
+ent-LaserBlastDoor = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
+ent-LaserBlastDoorOpen = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
+ent-LaserStarCorpsBlastDoor = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
+ent-LaserStarCorpsBlastDoorOpen = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
+ent-LaserFederationBlastDoor = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
+ent-LaserFederationBlastDoorOpen = энергетический барьер
+    .desc = На нём написано «ЛАЗЕРНАЯ ОПАСНОСТЬ».
