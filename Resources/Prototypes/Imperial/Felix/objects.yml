@@ -292,6 +292,14 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: ContainerFill
     containers:
       board: [ DoorElectronics ]
@@ -359,6 +367,14 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: ContainerFill
     containers:
       board: [ DoorElectronics ]
@@ -426,6 +442,14 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: ContainerFill
     containers:
       board: [ DoorElectronics ]
