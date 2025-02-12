@@ -260,7 +260,7 @@
   components:
   - type: PointLight
     radius: 1.4
-    energy: 2
+    energy: 3
     color: "#a53030"
   - type: AccessReader
   - type: Sprite
@@ -395,7 +395,6 @@
   components:
   - type: PointLight
     radius: 1.4
-    energy: 2
     color: "#a8ca58"
   - type: AccessReader
   - type: Sprite
