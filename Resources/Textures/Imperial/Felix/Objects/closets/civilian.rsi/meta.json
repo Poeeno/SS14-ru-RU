@@ -17,6 +17,15 @@
       "name": "base_open"
     },
     {
+      "name": "generic"
+    },
+    {
+      "name": "generic_door"
+    },
+    {
+      "name": "generic_open"
+    },
+    {
       "name": "welded"
     },
     {
@@ -35,6 +44,9 @@
     },
     {
       "name": "unlocked"
+    },
+    {
+      "name": "generic_icon"
     }
   ]
 }

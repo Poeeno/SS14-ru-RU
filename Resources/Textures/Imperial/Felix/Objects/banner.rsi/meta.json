@@ -12,6 +12,12 @@
       },
       {
         "name": "security"
+      },
+      {
+        "name": "civilian-unshaded"
+      },
+      {
+        "name": "security-unshaded"
       }
     ]
   }

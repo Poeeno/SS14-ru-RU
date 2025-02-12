@@ -333,7 +333,12 @@
   components:
   - type: Sprite
     sprite: Imperial/Felix/Objects/banner.rsi
-    state: civilian
+    layers:
+      - state: civilian
+      - state: civilian-unshaded
+        visible: true
+        shader: unshaded
+        map: [ "light" ]
 - type: entity
   id: BannerElysiumSecurity
   parent: BannerBase
@@ -343,7 +348,12 @@
   components:
   - type: Sprite
     sprite: Imperial/Felix/Objects/banner.rsi
-    state: security
+    layers:
+      - state: security
+      - state: security-unshaded
+        visible: true
+        shader: unshaded
+        map: [ "light" ]
 - type: entity
   parent: PosterBase
   id: ElysiumPosterHolo
@@ -353,4 +363,60 @@
   components:
   - type: Sprite
     sprite: Imperial/Felix/Objects/poster.rsi
-    state: elysium
+    layers:
+      - state: elysium
+      - state: elysium-unshaded
+        visible: true
+        shader: unshaded
+        map: [ "light" ]
+
+# Торговая точка
+- type: entity
+  id: StarCorpsTradingTerminal
+  parent: BaseStructure
+  name: trading terminal
+  suffix: Felix
+  description: Multiple holographic displays that you can interact with.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Imperial/Felix/Objects/terminal.rsi
+    layers:
+      - state: terminal
+      - state: terminal-unshaded
+        visible: true
+        shader: unshaded
+        map: [ "light" ]
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 2
+            max: 2
+          CableApcStack10:
+            min: 1
+            max: 1
+          ShardGlassReinforced:
+            min: 2
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+  - type: Appearance
