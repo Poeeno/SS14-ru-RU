@@ -258,6 +258,10 @@
   suffix: Felix
   description: This one says 'LASER DANGER'.
   components:
+  - type: PointLight
+    radius: 1.4
+    energy: 2
+    color: "#a53030"
   - type: AccessReader
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/default.rsi
@@ -322,6 +326,9 @@
   suffix: Felix
   description: This one says 'LASER DANGER'.
   components:
+  - type: PointLight
+    radius: 1.4
+    color: "#0fffff"
   - type: AccessReader
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/starcorps.rsi
@@ -386,6 +393,10 @@
   suffix: Felix, ElysiumPrime
   description: This one says 'LASER DANGER'.
   components:
+  - type: PointLight
+    radius: 1.4
+    energy: 2
+    color: "#a8ca58"
   - type: AccessReader
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/federation.rsi
