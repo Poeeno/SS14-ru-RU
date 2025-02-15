@@ -314,7 +314,7 @@
 - type: entity
   id: LaserBlastDoorOpen
   parent: LaserBlastDoor
-  suffix: Open, Felix
+  suffix: Открыто, Felix
   components:
   - type: Door
     state: Open
@@ -329,7 +329,7 @@
 
 - type: entity
   id: LaserStarCorpsBlastDoor
-  parent: BaseShutter
+  parent: LaserBlastDoor
   name: laser blast door
   suffix: Felix
   description: This one says 'LASER DANGER'.
@@ -337,59 +337,16 @@
   - type: PointLight
     radius: 1.4
     color: "#0fffff"
-  - type: AccessReader
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/starcorps.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
-  - type: Door
-    occludes: false
-    closeTimeOne: 0.4
-    closeTimeTwo: 0.4
-    openTimeOne: 0.4
-    openTimeTwo: 0.4
-    openingAnimationTime: 1.0
-    closingAnimationTime: 1.0
-    canPry: false
-    crushDamage:
-      types:
-        Blunt: 25 # yowch
-    openSound:
-      path: /Audio/Weapons/ebladeoff.ogg
-    closeSound:
-      path: /Audio/Weapons/ebladeon.ogg
-  - type: Occluder
-    enabled: false
-  - type: Appearance
-  - type: RadiationBlocker
-    resistance: 8
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StrongMetallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 750
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronics ]
-  - type: Construction
-    graph: BlastDoor
-    node: blastdoor
-    containers:
-    - board
-  - type: StaticPrice
-    price: 500
 
 - type: entity
   id: LaserStarCorpsBlastDoorOpen
   parent: LaserStarCorpsBlastDoor
-  suffix: Open, Felix
+  suffix: Открыто, Felix
   components:
   - type: Door
     state: Open
@@ -404,7 +361,7 @@
 
 - type: entity
   id: LaserFederationBlastDoor
-  parent: BaseShutter
+  parent: LaserBlastDoor
   name: laser blast door
   suffix: Felix, ElysiumPrime
   description: This one says 'LASER DANGER'.
@@ -412,59 +369,16 @@
   - type: PointLight
     radius: 1.4
     color: "#a8ca58"
-  - type: AccessReader
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/federation.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
-  - type: Door
-    occludes: false
-    closeTimeOne: 0.4
-    closeTimeTwo: 0.4
-    openTimeOne: 0.4
-    openTimeTwo: 0.4
-    openingAnimationTime: 1.0
-    closingAnimationTime: 1.0
-    canPry: false
-    crushDamage:
-      types:
-        Blunt: 25 # yowch
-    openSound:
-      path: /Audio/Weapons/ebladeoff.ogg
-    closeSound:
-      path: /Audio/Weapons/ebladeon.ogg
-  - type: Occluder
-    enabled: false
-  - type: Appearance
-  - type: RadiationBlocker
-    resistance: 8
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StrongMetallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 750
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronics ]
-  - type: Construction
-    graph: BlastDoor
-    node: blastdoor
-    containers:
-    - board
-  - type: StaticPrice
-    price: 500
 
 - type: entity
   id: LaserFederationBlastDoorOpen
   parent: LaserFederationBlastDoor
-  suffix: Open, Felix, ElysiumPrime
+  suffix: Открыто, Felix, ElysiumPrime
   components:
   - type: Door
     state: Open
