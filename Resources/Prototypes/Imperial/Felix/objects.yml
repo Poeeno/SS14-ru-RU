@@ -336,6 +336,7 @@
   components:
   - type: PointLight
     radius: 1.4
+    energy: 2
     color: "#0fffff"
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/starcorps.rsi
@@ -368,6 +369,7 @@
   components:
   - type: PointLight
     radius: 1.4
+    energy: 2
     color: "#a8ca58"
   - type: Sprite
     sprite: Imperial/Felix/Objects/laserblastdoor/federation.rsi
