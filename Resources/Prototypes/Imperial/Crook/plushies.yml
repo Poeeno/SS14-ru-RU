@@ -65,6 +65,15 @@
     count: 2
 # Datasets for Fumo
 
+- type: speechSounds
+  id: Fumo
+  saySound:
+    path: /Audio/Imperial/Crook/fumo.ogg
+  askSound:
+    path: /Audio/Imperial/Crook/fumo.ogg
+  exclaimSound:
+    path: /Audio/Imperial/Crook/fumo.ogg
+
 - type: entity
   parent: BaseFigurine
   id: PlushieFumoJunko
@@ -77,6 +86,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: junko
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoJunko
 
@@ -92,6 +103,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: marisa
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoMarisa
 
@@ -107,6 +120,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: reimu
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoReimu
 
@@ -122,6 +137,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: reisen
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoReisen
 
@@ -137,6 +154,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: tewi
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoTewi
 
@@ -152,6 +171,8 @@
   - type: Sprite
     sprite: Imperial/Crook/Plushie/fumoplush.rsi
     state: cirno
+  - type: Speech
+    speechSounds: Fumo
   - type: SpeakOnTrigger
     pack: FumoCirno
 
