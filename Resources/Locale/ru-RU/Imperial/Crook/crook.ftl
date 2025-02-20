@@ -17,3 +17,5 @@ ent-PlushieFumoReisen = Райзен Удонгейн Инаба
     .desc = Ослепляет тебя безумием.
 ent-PlushieFumoTewi = Теви Инаба
     .desc = Пранкста-гангста.
+ent-PlushieFumoCirno = Чирно
+    .desc = Какая же она дурочка.

@@ -98,6 +98,19 @@
     state: tewi
 
 - type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoCirno
+  name: Cirno
+  suffix: Crook, COMMUNITY, TOY
+  description: She's such a dummy.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: cirno
+
+- type: entity
   id: FumoBoxCrook
   parent: [PresentBase, BaseItem]
   name: fumo box
@@ -124,6 +137,9 @@
         orGroup: GiftPool
         prob: .1
       - id: PlushieFumoTewi
+        orGroup: GiftPool
+        prob: .1
+      - id: PlushieFumoCirno
         orGroup: GiftPool
         prob: .1
     sound:
