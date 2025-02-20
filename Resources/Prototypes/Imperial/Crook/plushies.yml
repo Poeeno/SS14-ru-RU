@@ -1,0 +1,147 @@
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieHlimmy
+  name: Hlimmy Wugo
+  suffix: Crook, COMMUNITY, TOY
+  description: What? You can't put the Research Director in the artifact crusher?
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/hlimmywugo.rsi
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: VlPCFlowerTwo
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieTaylor
+  name: Alex Taylor
+  suffix: Crook, COMMUNITY, TOY
+  description: Dumplings are very delicious!
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/alextaylor.rsi
+    state: icon
+  - type: StorageFill
+    contents:
+      - id: DrinkLongIslandIcedTeaGlass
+
+# Фумо @buhoj_med
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoJunko
+  name: Junko
+  suffix: Crook, COMMUNITY, TOY
+  description: Junko scary.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: junko
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoMarisa
+  name: Marisa
+  suffix: Crook, COMMUNITY, TOY
+  description: Just let me possess the spark of all these bad boys!
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: marisa
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoReimu
+  name: Reimu
+  suffix: Crook, COMMUNITY, TOY
+  description: I don't get paid enough for this.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: reimu
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoReisen
+  name: Reisen
+  suffix: Crook, COMMUNITY, TOY
+  description: Blinding you with madness.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: reisen
+
+- type: entity
+  parent: BasePlushieCharacter
+  id: PlushieFumoTewi
+  name: Tewi
+  suffix: Crook, COMMUNITY, TOY
+  description: Pranksta gangsta.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumoplush.rsi
+    state: tewi
+
+- type: entity
+  id: FumoBoxCrook
+  parent: [PresentBase, BaseItem]
+  name: fumo box
+  description: Holds a plush Fumo.
+  suffix: Crook, COMMUNITY, TOY
+  components:
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumobox.rsi
+    layers:
+      - state: icon
+  - type: SpawnItemsOnUse
+    items:
+      - id: FumoBoxCrookOpened
+      - id: PlushieFumoJunko
+        orGroup: GiftPool
+        prob: .1
+      - id: PlushieFumoMarisa
+        orGroup: GiftPool
+        prob: .1
+      - id: PlushieFumoReimu
+        orGroup: GiftPool
+        prob: .1
+      - id: PlushieFumoReisen
+        orGroup: GiftPool
+        prob: .1
+      - id: PlushieFumoTewi
+        orGroup: GiftPool
+        prob: .1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+- type: entity
+  id: FumoBoxCrookOpened
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  name: unpacked fumo box
+  description: There used to be a fumo plushie in it.
+  components:
+  - type: Sprite
+    sprite: Imperial/Crook/Plushie/fumobox.rsi
+    layers:
+      - state: icon-open
+  - type: Tag
+    tags:
+    - Trash
+  - type: SpaceGarbage
+
+# Фумо @buhoj_med
