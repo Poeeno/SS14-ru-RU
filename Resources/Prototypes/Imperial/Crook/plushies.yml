@@ -66,7 +66,7 @@
 # Datasets for Fumo
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoJunko
   name: Junko
   suffix: Crook, COMMUNITY, TOY
@@ -81,7 +81,7 @@
     pack: FumoJunko
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoMarisa
   name: Marisa
   suffix: Crook, COMMUNITY, TOY
@@ -96,7 +96,7 @@
     pack: FumoMarisa
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoReimu
   name: Reimu
   suffix: Crook, COMMUNITY, TOY
@@ -111,7 +111,7 @@
     pack: FumoReimu
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoReisen
   name: Reisen
   suffix: Crook, COMMUNITY, TOY
@@ -126,7 +126,7 @@
     pack: FumoReisen
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoTewi
   name: Tewi
   suffix: Crook, COMMUNITY, TOY
@@ -141,7 +141,7 @@
     pack: FumoTewi
 
 - type: entity
-  parent: BasePlushieCharacter
+  parent: BaseFigurine
   id: PlushieFumoCirno
   name: Cirno
   suffix: Crook, COMMUNITY, TOY
