@@ -37,6 +37,10 @@ ent-WallShuttleStarCorps = стена Звёздного Корпуса
     .desc = Удерживает воздух внутри.
 ent-DarkWallShuttleStarCorps = стена Звёздного Корпуса
     .desc = Удерживает воздух внутри.
+ent-DiagonalWallShuttleStarCorps = стена Звёздного Корпуса
+    .desc = Удерживает воздух внутри.
+ent-DiagonalDarkWallShuttleStarCorps = стена Звёздного Корпуса
+    .desc = Удерживает воздух внутри.
 
 ent-CivilianFederationLocker = гражданский шкафчик
 ent-PatrolLocker = оружейный шкаф
