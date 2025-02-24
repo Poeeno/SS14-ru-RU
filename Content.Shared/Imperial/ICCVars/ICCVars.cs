@@ -7,8 +7,6 @@ namespace Content.Shared.Imperial.ICCVar;
 // ReSharper disable once InconsistentNaming
 public sealed partial class ICCVars : CVars
 {
-    public static readonly CVarDef<string> LobbyName =
-            CVarDef.Create("server.lobby_name", "MyServer", CVar.REPLICATED | CVar.SERVER);
     public static readonly CVarDef<bool>
         VoteAutoStartInLobby = CVarDef.Create("vote.autostartinlobby", true, CVar.SERVERONLY);
     public static readonly CVarDef<int>
